@@ -29,13 +29,8 @@ This project provides an API to automate the setup of a PostgreSQL primary-read-
 
 2. **Test API**:
    ```bash
-   curl -X POST http://localhost:8001/generate -H "Content-Type: application/json" -d '{
-  "postgres_version": "14.10",
-  "instance_type": "t2.micro",
-  "num_replicas": 2,
-  "max_connections": 100,
-  "shared_buffers": "256MB"
-}'
+   curl -X POST http://localhost:8001/generate -H "Content-Type: application/json" -d '{"postgres_version": "14.10","instance_type": "t2.micro","num_replicas": 2,"max_connections": 100,"shared_buffers": "256MB"}'
+
 
 **Expected Response**:
 
